@@ -18,7 +18,7 @@ const logs_schema = require('./models/logs_schema');
 // app.use(cors());
 const corsOptions = {
   origin: [
-    "https://school-inventory-management-system.vercel.app",
+    "https://school-inventory-management-system-mauve.vercel.app/",
     "http://localhost:5173",
   ],
   optionsSuccessStatus: 200,
