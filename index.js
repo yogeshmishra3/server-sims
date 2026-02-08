@@ -14,15 +14,13 @@ const sports_items = require("./models/sports_items")
 const User = require('./models/userModel');
 const logs_schema = require('./models/logs_schema');
 
-//MIddleware
-// app.use(cors());
 const corsOptions = {
-  origin: [
-    "https://school-inventory-management-system-mauve.vercel.app/",
-    "http://localhost:5173",
-  ],
+  origin: "*",
   optionsSuccessStatus: 200,
 };
+
+app.use(cors(corsOptions));
+
 
 app.use(cors(corsOptions));
 app.use(express.json());
